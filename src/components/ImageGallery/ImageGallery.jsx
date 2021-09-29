@@ -14,6 +14,10 @@ export const ImageGallery = ({ images, onSelect }) => {
 }
 
 ImageGallery.propTypes = {
-    images: PropTypes.arrayOf(PropTypes.object),
+    images: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            image: PropTypes.object,
+        })),
     onSelect: PropTypes.func,
 };
