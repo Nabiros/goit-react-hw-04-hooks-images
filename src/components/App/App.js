@@ -71,7 +71,7 @@ export default function App() {
         <Modal
           src={selectedImage.largeImageURL}
           alt={selectedImage.tags}
-          onSelect={this.handleSelectImg}
+          onSelect={handleSelectImg}
         />
       )}
       <Toaster />
